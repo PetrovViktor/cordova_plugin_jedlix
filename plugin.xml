@@ -22,6 +22,8 @@
 
     <platform name="android">
         <config-file parent="/*" target="config.xml">
+            <preference name="GradlePluginVersion" value="8.0.0" />
+            <preference name="KotlinVersion" value="1.8.10" />
             <preference name="GradlePluginKotlinEnabled" value="true" />
             <feature name="JedlixPlugin">
                 <param name="android-package" value="JedlixPlugin" />
@@ -30,6 +32,5 @@
         <framework src="com.jedlix:sdk:1.5.0" embed="true" custom="true" />
         <source-file src="src/android/Authentication.kt" />
         <source-file src="src/android/DefaultAuthentication.kt" />
-
     </platform>
 </plugin>
