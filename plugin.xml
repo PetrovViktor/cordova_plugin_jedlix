@@ -29,6 +29,9 @@
                 <param name="android-package" value="JedlixPlugin" />
             </feature>
         </config-file>
+		<edit-config file="AndroidManifest.xml" target="/manifest/uses-sdk" mode="merge">
+			<uses-sdk android:minSdkVersion="31" android:maxSdkVersion="34" />
+		</edit-config>
 		<framework src="com.jedlix:sdk:1.5.0" custom="true" type="gradleReference"/>
 <source-file src="src/android/Authentication.kt" target-dir="src/com/jedlixplugin/cordova/plugin" />
 <source-file src="src/android/DefaultAuthentication.kt" target-dir="src/com/jedlixplugin/cordova/plugin" />
